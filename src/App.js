@@ -1,5 +1,6 @@
 import CounterOne from "./Components/UseEffect/CounterOne";
 import HookMouse from "./Components/UseEffect/HookMouse";
+import IntervalCounter from "./Components/UseEffect/IntervalCounter";
 import MouseContainer from "./Components/UseEffect/MouseContainer";
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <div>
       {/* <CounterOne /> */}
       {/* <HookMouse /> */}
-      <MouseContainer />
+      {/* <MouseContainer /> */}
+      <IntervalCounter />
     </div>
   );
 }
