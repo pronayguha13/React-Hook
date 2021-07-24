@@ -1,7 +1,8 @@
-import CounterOne from "./Components/UseEffect/CounterOne";
-import HookMouse from "./Components/UseEffect/HookMouse";
-import IntervalCounter from "./Components/UseEffect/IntervalCounter";
-import MouseContainer from "./Components/UseEffect/MouseContainer";
+import DataFetching from "./Components/UseEffect/DataFetching";
+// import CounterOne from "./Components/UseEffect/CounterOne";
+// import HookMouse from "./Components/UseEffect/HookMouse";
+// import IntervalCounter from "./Components/UseEffect/IntervalCounter";
+// import MouseContainer from "./Components/UseEffect/MouseContainer";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       {/* <CounterOne /> */}
       {/* <HookMouse /> */}
       {/* <MouseContainer /> */}
-      <IntervalCounter />
+      {/* <IntervalCounter /> */}
+      <DataFetching />
     </div>
   );
 }
