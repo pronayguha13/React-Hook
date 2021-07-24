@@ -1,9 +1,11 @@
 import CounterOne from "./Components/UseEffect/CounterOne";
+import HookMouse from "./Components/UseEffect/HookMouse";
 
 function App() {
   return (
     <div>
-      <CounterOne />
+      {/* <CounterOne /> */}
+      <HookMouse />
     </div>
   );
 }
