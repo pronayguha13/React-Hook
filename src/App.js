@@ -1,17 +1,16 @@
-import DataFetching from "./Components/UseEffect/DataFetching";
-// import CounterOne from "./Components/UseEffect/CounterOne";
-// import HookMouse from "./Components/UseEffect/HookMouse";
-// import IntervalCounter from "./Components/UseEffect/IntervalCounter";
-// import MouseContainer from "./Components/UseEffect/MouseContainer";
+import React, { createContext } from "react";
+import ComponentC from "./Components/UseContext/ComponentC";
 
+export const UserContext = createContext();
+export const ChannelContext = createContext();
 function App() {
   return (
     <div>
-      {/* <CounterOne /> */}
-      {/* <HookMouse /> */}
-      {/* <MouseContainer /> */}
-      {/* <IntervalCounter /> */}
-      <DataFetching />
+      <UserContext.Provider value={"Pronay"}>
+        <ChannelContext.Provider value={"My Channel"}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
