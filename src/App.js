@@ -1,18 +1,12 @@
-import React, { createContext } from "react";
-import ComponentC from "./Components/UseContext/ComponentC";
+import React from "react";
+import CounterOne from "./Components/UseReducer/CounterOne";
 
-export const UserContext = createContext();
-export const ChannelContext = createContext();
-function App() {
+const App = () => {
   return (
     <div>
-      <UserContext.Provider value={"Pronay"}>
-        <ChannelContext.Provider value={"My Channel"}>
-          <ComponentC />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
+      <CounterOne />
     </div>
   );
-}
+};
 
 export default App;
