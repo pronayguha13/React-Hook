@@ -1,10 +1,13 @@
 import React from "react";
-import DataFetchingTwo from "./Components/UseReducer/DataFetchingTwo";
+import { CounterContextProvider } from "./CounterContext";
+import Counter from "./CounterWithAllHook/Counter";
 
 const App = () => {
   return (
     <div>
-      <DataFetchingTwo />
+      <CounterContextProvider>
+        <Counter />
+      </CounterContextProvider>
     </div>
   );
 };
