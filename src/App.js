@@ -1,10 +1,10 @@
 import React from "react";
-import CounterThree from "./Components/UseReducer/CounterThree";
+import CounterOne from "./Components/UseReducer/CounterOne";
 
 const App = () => {
   return (
     <div>
-      <CounterThree />
+      <CounterOne />
     </div>
   );
 };

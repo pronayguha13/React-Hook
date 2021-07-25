@@ -1,16 +1,23 @@
-import React, { useReducer } from "react";
+import React, { useReducer, createContext } from "react";
+import DecrementButton from "./DecrementButton";
+import IncrementButton from "./IncrementButton";
+import ResetButton from "./ResetButton";
 
-const initState = 0;
+export const CounterContext = createContext();
+
+const initState = {
+  countValue: 0,
+};
 const reducer = (state, action) => {
-  switch (action) {
+  switch (action.type) {
     case "increment":
-      return state + 1;
+      return { countValue: state.countValue + action.value };
     case "decrement":
-      return state - 1;
+      return { countValue: state.countValue - action.value };
     case "reset":
-      return initState;
+      return { countValue: initState.countValue };
     default:
-      return state;
+      return { countValue: state.countValue };
   }
 };
 
@@ -19,10 +26,12 @@ const CounterOne = () => {
 
   return (
     <div>
-      <div>Count- {count}</div>
-      <button onClick={() => dispatch("increment")}>Increment</button>
-      <button onClick={() => dispatch("decrement")}>Decrement</button>
-      <button onClick={() => dispatch("reset")}>Reset</button>
+      <div>Count- {count.countValue}</div>
+      <CounterContext.Provider value={{ dispatchCount: dispatch }}>
+        <IncrementButton />
+        <DecrementButton />
+        <ResetButton />
+      </CounterContext.Provider>
     </div>
   );
 };
