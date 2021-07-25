@@ -1,10 +1,10 @@
 import React from "react";
-import CounterOne from "./Components/UseReducer/CounterOne";
+import DataFetchingTwo from "./Components/UseReducer/DataFetchingTwo";
 
 const App = () => {
   return (
     <div>
-      <CounterOne />
+      <DataFetchingTwo />
     </div>
   );
 };
