@@ -1,13 +1,10 @@
 import React from "react";
-import { CounterContextProvider } from "./CounterContext";
-import Counter from "./CounterWithAllHook/Counter";
+import ParentComponent from "./Components/UseCallBack/ParentComponent";
 
 const App = () => {
   return (
     <div>
-      <CounterContextProvider>
-        <Counter />
-      </CounterContextProvider>
+      <ParentComponent />
     </div>
   );
 };
