@@ -1,10 +1,10 @@
 import React from "react";
-import ParentComponent from "./Components/UseCallBack/ParentComponent";
+import Counter from "./Components/UseMemo/Counter";
 
 const App = () => {
   return (
     <div>
-      <ParentComponent />
+      <Counter />
     </div>
   );
 };
